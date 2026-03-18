@@ -1,0 +1,20 @@
+# Custom Language File for Launcher Customizer
+
+[ejs.app]
+title = "Tokiwa Launcher"
+
+[ejs.landing]
+mediaGitHubURL = "https://github.com/NvdaAnsel/TokiwaLauncher"
+mediaXURL = "#"
+mediaInstagramURL = "#"
+mediaYouTubeURL = "#"
+mediaDiscordURL = "https://discord.gg/YOUR_DISCORD_INVITE"
+
+[ejs.settings]
+sourceGithubLink = "https://github.com/NvdaAnsel/TokiwaLauncher"
+supportLink = "https://github.com/NvdaAnsel/TokiwaLauncher/issues"
+
+[ejs.welcome]
+welcomeHeader = "WELCOME TO GRADEX"
+welcomeDescription = "GradeX Minecraft servers. Enjoy optimized gameplay with Fabric + Sodium."
+welcomeDescCTA = "You are just a few clicks away from GradeX."

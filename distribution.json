@@ -1,0 +1,179 @@
+{
+    "version": "1.0.0",
+    "discord": {
+        "clientId": "",
+        "smallImageText": "GradeX",
+        "smallImageKey": "gradex-icon"
+    },
+    "rss": "",
+    "servers": [
+        {
+            "id": "gradex-main-1.21.4",
+            "name": "GradeX Main",
+            "description": "mc.GradeX.games",
+            "icon": "",
+            "version": "1.0.0",
+            "address": "mc.GradeX.games:25565",
+            "minecraftVersion": "1.21.4",
+            "discord": {
+                "shortId": "GradeX Main",
+                "largeImageText": "mc.GradeX.games",
+                "largeImageKey": "gradex-main-1.21.4"
+            },
+            "mainServer": true,
+            "autoconnect": true,
+            "modules": [
+                {
+                    "id": "net.fabricmc:fabric-loader:0.18.4",
+                    "name": "Fabric Loader 0.18.4",
+                    "type": "Fabric",
+                    "artifact": {
+                        "size": 1944518,
+                        "MD5": "56c00fa22e0452e8567be1feae73c3b9",
+                        "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/lib/net/fabricmc/fabric-loader/0.18.4/fabric-loader-0.18.4.jar"
+                    },
+                    "subModules": [
+                        {
+                            "id": "1.21.4-fabric-0.18.4",
+                            "name": "Fabric (version.json)",
+                            "type": "VersionManifest",
+                            "artifact": {
+                                "size": 3358,
+                                "MD5": "aadd2a2e079fb9950baced37ecf9d85f",
+                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/versions/1.21.4-fabric-0.18.4/1.21.4-fabric-0.18.4.json"
+                            }
+                        },
+                        {
+                            "id": "sodium:sodium:mc1.21.4-0.6.13-fabric@jar",
+                            "name": "Sodium",
+                            "type": "FabricMod",
+                            "required": {
+                                "value": true,
+                                "def": true
+                            },
+                            "artifact": {
+                                "size": 1306799,
+                                "MD5": "28922a78d1876ee062e3265f10abcc46",
+                                "path": "sodium-fabric-0.6.13+mc1.21.4.jar",
+                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/mods/fabric/sodium-fabric-0.6.13+mc1.21.4.jar"
+                            }
+                        },
+                        {
+                            "id": "lithium:lithium:mc1.21.4-0.15.3-fabric@jar",
+                            "name": "Lithium",
+                            "type": "FabricMod",
+                            "required": {
+                                "value": true,
+                                "def": true
+                            },
+                            "artifact": {
+                                "size": 797555,
+                                "MD5": "7a3a807eed9c4868fbe14cecd8bb082d",
+                                "path": "lithium-fabric-0.15.3+mc1.21.4.jar",
+                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/mods/fabric/lithium-fabric-0.15.3+mc1.21.4.jar"
+                            }
+                        },
+                        {
+                            "id": "iris:iris:1.8.8+1.21.4-fabric@jar",
+                            "name": "Iris Shaders",
+                            "type": "FabricMod",
+                            "required": {
+                                "value": true,
+                                "def": true
+                            },
+                            "artifact": {
+                                "size": 2682702,
+                                "MD5": "59d373e4874efbcb8fb426bdefa588d9",
+                                "path": "iris-fabric-1.8.8+mc1.21.4.jar",
+                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/mods/fabric/iris-fabric-1.8.8+mc1.21.4.jar"
+                            }
+                        },
+                        {
+                            "id": "fabric-api:fabric-api:0.119.4+1.21.4@jar",
+                            "name": "Fabric API",
+                            "type": "FabricMod",
+                            "required": {
+                                "value": true,
+                                "def": true
+                            },
+                            "artifact": {
+                                "size": 2149128,
+                                "MD5": "128a8d042180e7c92567342e21a21a6d",
+                                "path": "fabric-api-0.119.4+1.21.4.jar",
+                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/mods/fabric/fabric-api-0.119.4+1.21.4.jar"
+                            }
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": "gradex-meme-TBD",
+            "name": "GradeX Meme",
+            "description": "meme.gradex.games",
+            "icon": "",
+            "version": "1.0.0",
+            "address": "meme.gradex.games:25565",
+            "minecraftVersion": "TBD",
+            "discord": {
+                "shortId": "GradeX Meme",
+                "largeImageText": "meme.gradex.games",
+                "largeImageKey": "gradex-meme-TBD"
+            },
+            "mainServer": false,
+            "autoconnect": true,
+            "modules": []
+        },
+        {
+            "id": "gradex-private-TBD",
+            "name": "GradeX Private",
+            "description": "private.gradex.games",
+            "icon": "",
+            "version": "1.0.0",
+            "address": "private.gradex.games:25565",
+            "minecraftVersion": "TBD",
+            "discord": {
+                "shortId": "GradeX Private",
+                "largeImageText": "private.gradex.games",
+                "largeImageKey": "gradex-private-TBD"
+            },
+            "mainServer": false,
+            "autoconnect": true,
+            "modules": []
+        },
+        {
+            "id": "gradex-yoruha-TBD",
+            "name": "Yoruha",
+            "description": "Yoruha.gradex.games",
+            "icon": "",
+            "version": "1.0.0",
+            "address": "Yoruha.gradex.games:25565",
+            "minecraftVersion": "TBD",
+            "discord": {
+                "shortId": "Yoruha",
+                "largeImageText": "Yoruha.gradex.games",
+                "largeImageKey": "gradex-yoruha-TBD"
+            },
+            "mainServer": false,
+            "autoconnect": true,
+            "modules": []
+        },
+        {
+            "id": "gradex-haruto-TBD",
+            "name": "Haruto",
+            "description": "haruto.gradex.games",
+            "icon": "",
+            "version": "1.0.0",
+            "address": "haruto.gradex.games:25565",
+            "minecraftVersion": "TBD",
+            "discord": {
+                "shortId": "Haruto",
+                "largeImageText": "haruto.gradex.games",
+                "largeImageKey": "gradex-haruto-TBD"
+            },
+            "mainServer": false,
+            "autoconnect": true,
+            "modules": []
+        }
+    ]
+}
