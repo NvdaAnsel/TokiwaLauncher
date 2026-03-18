@@ -9,14 +9,14 @@
     "servers": [
         {
             "id": "gradex-main-1.21.4",
-            "name": "GradeX Main",
+            "name": "get0",
             "description": "mc.GradeX.games",
             "icon": "https://nvdaansel.github.io/TokiwaLauncher/repo/server-icon.png",
             "version": "1.0.0",
             "address": "mc.GradeX.games:25565",
             "minecraftVersion": "1.21.4",
             "discord": {
-                "shortId": "GradeX Main",
+                "shortId": "get0",
                 "largeImageText": "mc.GradeX.games",
                 "largeImageKey": "gradex-main-1.21.4"
             },
@@ -109,14 +109,14 @@
         },
         {
             "id": "gradex-meme-TBD",
-            "name": "GradeX Meme",
+            "name": "meme",
             "description": "meme.gradex.games",
             "icon": "https://nvdaansel.github.io/TokiwaLauncher/repo/server-icon.png",
             "version": "1.0.0",
             "address": "meme.gradex.games:25565",
             "minecraftVersion": "TBD",
             "discord": {
-                "shortId": "GradeX Meme",
+                "shortId": "meme",
                 "largeImageText": "meme.gradex.games",
                 "largeImageKey": "gradex-meme-TBD"
             },
@@ -126,33 +126,16 @@
         },
         {
             "id": "gradex-private-TBD",
-            "name": "GradeX Private",
+            "name": "private",
             "description": "private.gradex.games",
             "icon": "https://nvdaansel.github.io/TokiwaLauncher/repo/server-icon.png",
             "version": "1.0.0",
             "address": "private.gradex.games:25565",
             "minecraftVersion": "TBD",
             "discord": {
-                "shortId": "GradeX Private",
+                "shortId": "private",
                 "largeImageText": "private.gradex.games",
                 "largeImageKey": "gradex-private-TBD"
-            },
-            "mainServer": false,
-            "autoconnect": true,
-            "modules": []
-        },
-        {
-            "id": "gradex-yoruha-TBD",
-            "name": "Yoruha",
-            "description": "Yoruha.gradex.games",
-            "icon": "https://nvdaansel.github.io/TokiwaLauncher/repo/server-icon.png",
-            "version": "1.0.0",
-            "address": "Yoruha.gradex.games:25565",
-            "minecraftVersion": "TBD",
-            "discord": {
-                "shortId": "Yoruha",
-                "largeImageText": "Yoruha.gradex.games",
-                "largeImageKey": "gradex-yoruha-TBD"
             },
             "mainServer": false,
             "autoconnect": true,
