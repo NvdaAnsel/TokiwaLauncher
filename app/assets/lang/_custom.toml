@@ -15,6 +15,6 @@ sourceGithubLink = "https://github.com/NvdaAnsel/TokiwaLauncher"
 supportLink = "https://github.com/NvdaAnsel/TokiwaLauncher/issues"
 
 [ejs.welcome]
-welcomeHeader = "WELCOME TO GRADEX"
-welcomeDescription = "GradeX Minecraft servers. Enjoy optimized gameplay with Fabric + Sodium."
-welcomeDescCTA = "You are just a few clicks away from GradeX."
+welcomeHeader = "常盤ランチャーへようこそ"
+welcomeDescription = "このランチャーは選ぶだけで自動でMODがインストールされます。"
+welcomeDescCTA = "マイクロソフトのログインを使用しているので常盤ハルトに情報は渡りません"
