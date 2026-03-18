@@ -4,7 +4,7 @@ const ConfigManager = require('./configmanager')
 
 // TODO: Host your distribution.json and set the URL here
 // Example: 'https://your-github-username.github.io/TokiwaLauncher/distribution.json'
-exports.REMOTE_DISTRO_URL = 'http://localhost:8080/distribution.json'
+exports.REMOTE_DISTRO_URL = 'https://nvdaansel.github.io/TokiwaLauncher/distribution.json'
 
 const api = new DistributionAPI(
     ConfigManager.getLauncherDirectory(),

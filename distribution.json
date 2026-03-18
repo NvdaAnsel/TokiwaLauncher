@@ -48,7 +48,7 @@
                             "name": "Sodium",
                             "type": "FabricMod",
                             "required": {
-                                "value": false,
+                                "value": true,
                                 "def": true
                             },
                             "artifact": {
@@ -63,7 +63,7 @@
                             "name": "Lithium",
                             "type": "FabricMod",
                             "required": {
-                                "value": false,
+                                "value": true,
                                 "def": true
                             },
                             "artifact": {
@@ -78,7 +78,7 @@
                             "name": "Iris Shaders",
                             "type": "FabricMod",
                             "required": {
-                                "value": false,
+                                "value": true,
                                 "def": true
                             },
                             "artifact": {
@@ -93,7 +93,7 @@
                             "name": "Fabric API",
                             "type": "FabricMod",
                             "required": {
-                                "value": false,
+                                "value": true,
                                 "def": true
                             },
                             "artifact": {

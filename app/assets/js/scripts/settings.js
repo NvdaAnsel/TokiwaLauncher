@@ -736,6 +736,15 @@ function parseModulesForUI(mdls, submodules, servConf){
 
     for(const mdl of mdls){
 
+        if(mdl.rawModule.type === Type.Fabric || mdl.rawModule.type === Type.ForgeHosted){
+            if(mdl.subModules.length > 0){
+                const mConf = servConf[mdl.getVersionlessMavenIdentifier()]
+                const inner = parseModulesForUI(mdl.subModules, submodules, mConf != null ? mConf.mods || mConf : servConf)
+                reqMods += inner.reqMods
+                optMods += inner.optMods
+            }
+            continue
+        }
         if(mdl.rawModule.type === Type.ForgeMod || mdl.rawModule.type === Type.LiteMod || mdl.rawModule.type === Type.LiteLoader || mdl.rawModule.type === Type.FabricMod){
 
             if(mdl.getRequired().value){
