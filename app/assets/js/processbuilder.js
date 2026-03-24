@@ -183,6 +183,14 @@ class ProcessBuilder {
 
         for(let mdl of mdls){
             const type = mdl.rawModule.type
+            if(type === Type.Fabric || type === Type.ForgeHosted){
+                if(mdl.subModules.length > 0){
+                    const v = this.resolveModConfiguration(modCfg, mdl.subModules)
+                    fMods = fMods.concat(v.fMods)
+                    lMods = lMods.concat(v.lMods)
+                }
+                continue
+            }
             if(type === Type.ForgeMod || type === Type.LiteMod || type === Type.LiteLoader || type === Type.FabricMod){
                 const o = !mdl.getRequired().value
                 const e = ProcessBuilder.isModEnabled(modCfg[mdl.getVersionlessMavenIdentifier()], mdl.getRequired())
@@ -561,13 +569,7 @@ class ProcessBuilder {
             fse.removeSync(screenshotLink)
             try { fse.symlinkSync(screenshotTarget, screenshotLink, "junction") } catch(e) { console.log("Screenshot symlink failed:", e.message) }
         }
-        // Options - symlink options.txt from default .minecraft
-        const optionsLink = require("path").join(this.gameDir, "options.txt")
-        const optionsTarget = require("path").join(process.env.APPDATA || require("os").homedir(), ".minecraft", "options.txt")
-        if(fse.existsSync(optionsTarget)) {
-            try { if(fse.existsSync(optionsLink) && !fse.lstatSync(optionsLink).isSymbolicLink()) { fse.removeSync(optionsLink) } if(!fse.existsSync(optionsLink)) { fse.symlinkSync(optionsTarget, optionsLink, "junction") } } catch(e) { console.log("Options symlink failed:", e.message) }
-        }
-
+        
         // Forge Specific Arguments
         args = args.concat(this.modManifest.arguments.game)
 
