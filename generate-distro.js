@@ -1,15 +1,15 @@
-﻿const fs = require('fs');
+const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 
 const CONFIG = {
-    mcVersion: '1.21.4',
+    mcVersion: '1.21.11',
     fabricLoaderVersion: '',
     baseFileUrl: 'https://NvdaAnsel.github.io/TokiwaLauncher/repo',
     outputDir: './repo',
     userAgent: 'TokiwaLauncher/1.0.0 (contact@gradex.games)',
     servers: [
-        { id: 'gradex-main-1.21.4', name: 'GradeX Main', description: 'GradeX Main Server', address: 'mc.GradeX.games:25565', mcVersion: '1.21.4', mainServer: true, includeMods: true },
+        { id: 'gradex-main-1.21.11', name: 'GradeX Main', description: 'GradeX Main Server', address: 'mc.GradeX.games:25565', mcVersion: '1.21.11', mainServer: true, includeMods: true },
         { id: 'gradex-meme-TBD', name: 'GradeX Meme', description: 'GradeX Meme Server', address: 'meme.gradex.games:25565', mcVersion: 'TBD', mainServer: false, includeMods: false },
         { id: 'gradex-private-TBD', name: 'GradeX Private', description: 'GradeX Private Server', address: 'private.gradex.games:25565', mcVersion: 'TBD', mainServer: false, includeMods: false },
         { id: 'gradex-yoruha-TBD', name: 'Yoruha', description: 'Yoruha Server', address: 'Yoruha.gradex.games:25565', mcVersion: 'TBD', mainServer: false, includeMods: false },

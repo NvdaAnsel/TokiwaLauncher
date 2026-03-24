@@ -8,17 +8,17 @@
     "rss": "",
     "servers": [
         {
-            "id": "gradex-main-1.21.4",
-            "name": "get0",
-            "description": "mc.GradeX.games",
-            "icon": "https://nvdaansel.github.io/TokiwaLauncher/repo/get0-icon.png",
+            "id": "gradex-main-1.21.11",
+            "name": "GradeX Main",
+            "description": "GradeX Main Server",
+            "icon": "",
             "version": "1.0.0",
             "address": "mc.GradeX.games:25565",
-            "minecraftVersion": "1.21.4",
+            "minecraftVersion": "1.21.11",
             "discord": {
-                "shortId": "get0",
-                "largeImageText": "mc.GradeX.games",
-                "largeImageKey": "gradex-main-1.21.4"
+                "shortId": "GradeX Main",
+                "largeImageText": "GradeX Main Server",
+                "largeImageKey": "gradex-main-1.21.11"
             },
             "mainServer": true,
             "autoconnect": true,
@@ -34,259 +34,13 @@
                     },
                     "subModules": [
                         {
-                            "id": "1.21.4-fabric-0.18.4",
-                            "name": "Fabric (version.json)",
-                            "type": "VersionManifest",
-                            "artifact": {
-                                "size": 3358,
-                                "MD5": "aadd2a2e079fb9950baced37ecf9d85f",
-                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/versions/1.21.4-fabric-0.18.4/1.21.4-fabric-0.18.4.json"
-                            }
-                        },
-                        {
-                            "id": "sodium:sodium:mc1.21.4-0.6.13-fabric@jar",
-                            "name": "Sodium",
-                            "type": "FabricMod",
-                            "required": {
-                                "value": true,
-                                "def": true
-                            },
-                            "artifact": {
-                                "size": 1306799,
-                                "MD5": "28922a78d1876ee062e3265f10abcc46",
-                                "path": "sodium-fabric-0.6.13+mc1.21.4.jar",
-                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/mods/fabric/sodium-fabric-0.6.13+mc1.21.4.jar"
-                            }
-                        },
-                        {
-                            "id": "lithium:lithium:mc1.21.4-0.15.3-fabric@jar",
-                            "name": "Lithium",
-                            "type": "FabricMod",
-                            "required": {
-                                "value": true,
-                                "def": true
-                            },
-                            "artifact": {
-                                "size": 797555,
-                                "MD5": "7a3a807eed9c4868fbe14cecd8bb082d",
-                                "path": "lithium-fabric-0.15.3+mc1.21.4.jar",
-                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/mods/fabric/lithium-fabric-0.15.3+mc1.21.4.jar"
-                            }
-                        },
-                        {
-                            "id": "iris:iris:1.8.8+1.21.4-fabric@jar",
-                            "name": "Iris Shaders",
-                            "type": "FabricMod",
-                            "required": {
-                                "value": true,
-                                "def": true
-                            },
-                            "artifact": {
-                                "size": 2682702,
-                                "MD5": "59d373e4874efbcb8fb426bdefa588d9",
-                                "path": "iris-fabric-1.8.8+mc1.21.4.jar",
-                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/mods/fabric/iris-fabric-1.8.8+mc1.21.4.jar"
-                            }
-                        },
-                        {
-                            "id": "fabric-api:fabric-api:0.119.4+1.21.4@jar",
-                            "name": "Fabric API",
-                            "type": "FabricMod",
-                            "required": {
-                                "value": true,
-                                "def": true
-                            },
-                            "artifact": {
-                                "size": 2149128,
-                                "MD5": "128a8d042180e7c92567342e21a21a6d",
-                                "path": "fabric-api-0.119.4+1.21.4.jar",
-                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/mods/fabric/fabric-api-0.119.4+1.21.4.jar"
-                            }
-                        },
-                        {
-                            "id": "org.ow2.asm:asm:9.9",
-                            "name": "org.ow2.asm:asm",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 126122,
-                                "MD5": "6d1dd0482c03a6dc1807d9d004456021",
-                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/lib/org/ow2/asm/asm/9.9/asm-9.9.jar"
-                            }
-                        },
-                        {
-                            "id": "org.ow2.asm:asm-analysis:9.9",
-                            "name": "org.ow2.asm:asm-analysis",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 35149,
-                                "MD5": "f07383cfbd50f097558341a03b8871e1",
-                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/lib/org/ow2/asm/asm-analysis/9.9/asm-analysis-9.9.jar"
-                            }
-                        },
-                        {
-                            "id": "org.ow2.asm:asm-commons:9.9",
-                            "name": "org.ow2.asm:asm-commons",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 74348,
-                                "MD5": "8103b3de8f48fb4c7f97efdaa46ce809",
-                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/lib/org/ow2/asm/asm-commons/9.9/asm-commons-9.9.jar"
-                            }
-                        },
-                        {
-                            "id": "org.ow2.asm:asm-tree:9.9",
-                            "name": "org.ow2.asm:asm-tree",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 51947,
-                                "MD5": "912eeaba1a63d574ffc66c651c7c6725",
-                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/lib/org/ow2/asm/asm-tree/9.9/asm-tree-9.9.jar"
-                            }
-                        },
-                        {
-                            "id": "org.ow2.asm:asm-util:9.9",
-                            "name": "org.ow2.asm:asm-util",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 94565,
-                                "MD5": "ef5e90e736cd09bc407c1d46a3faba0f",
-                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/lib/org/ow2/asm/asm-util/9.9/asm-util-9.9.jar"
-                            }
-                        },
-                        {
-                            "id": "net.fabricmc:sponge-mixin:0.17.0+mixin.0.8.7",
-                            "name": "net.fabricmc:sponge-mixin",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 1505269,
-                                "MD5": "d27dcb910788a0bd4bea72942a714093",
-                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/lib/net/fabricmc/sponge-mixin/0.17.0+mixin.0.8.7/sponge-mixin-0.17.0+mixin.0.8.7.jar"
-                            }
-                        },
-                        {
-                            "id": "net.fabricmc:intermediary:1.21.4",
-                            "name": "net.fabricmc:intermediary",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 701826,
-                                "MD5": "d0f4187a62328d4a95f3428434efbd48",
-                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/lib/net/fabricmc/intermediary/1.21.4/intermediary-1.21.4.jar"
-                            }
-                        },
-                        {
-                            "id": "net.fabricmc:fabric-loader:0.18.4",
-                            "name": "net.fabricmc:fabric-loader",
-                            "type": "Library",
-                            "artifact": {
-                                "size": 1944518,
-                                "MD5": "56c00fa22e0452e8567be1feae73c3b9",
-                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/lib/net/fabricmc/fabric-loader/0.18.4/fabric-loader-0.18.4.jar"
-                            }
-                        }
-                    ]
-                }
-            ]
-        },
-        {
-            "id": "gradex-meme-TBD",
-            "name": "meme",
-            "description": "meme.gradex.games",
-            "icon": "https://nvdaansel.github.io/TokiwaLauncher/repo/meme-icon.png",
-            "version": "1.0.0",
-            "address": "meme.gradex.games:25565",
-            "minecraftVersion": "TBD",
-            "discord": {
-                "shortId": "meme",
-                "largeImageText": "meme.gradex.games",
-                "largeImageKey": "gradex-meme-TBD"
-            },
-            "mainServer": false,
-            "autoconnect": true,
-            "modules": []
-        },
-        {
-            "id": "gradex-private-TBD",
-            "name": "private",
-            "description": "private.gradex.games",
-            "icon": "https://nvdaansel.github.io/TokiwaLauncher/repo/server-icon.png",
-            "version": "1.0.0",
-            "address": "private.gradex.games:25565",
-            "minecraftVersion": "TBD",
-            "discord": {
-                "shortId": "private",
-                "largeImageText": "private.gradex.games",
-                "largeImageKey": "gradex-private-TBD"
-            },
-            "mainServer": false,
-            "autoconnect": true,
-            "modules": []
-        },
-        {
-            "id": "gradex-haruto-TBD",
-            "name": "Haruto",
-            "description": "haruto.gradex.games",
-            "icon": "https://nvdaansel.github.io/TokiwaLauncher/repo/haruto-icon.png",
-            "version": "1.0.0",
-            "address": "haruto.gradex.games:25565",
-            "minecraftVersion": "TBD",
-            "discord": {
-                "shortId": "Haruto",
-                "largeImageText": "haruto.gradex.games",
-                "largeImageKey": "gradex-haruto-TBD"
-            },
-            "mainServer": false,
-            "autoconnect": true,
-            "modules": []
-        },
-        {
-            "id": "nyancraft-1.21.11",
-            "name": "にゃんクラ",
-            "description": "172.234.80.42:46400",
-            "icon": "https://nvdaansel.github.io/TokiwaLauncher/repo/nyancraft-icon.png",
-            "version": "1.0.0",
-            "address": "172.234.80.42:46400",
-            "minecraftVersion": "1.21.11",
-            "discord": {
-                "shortId": "にゃんクラ",
-                "largeImageText": "にゃんクラ Server",
-                "largeImageKey": "nyancraft"
-            },
-            "mainServer": false,
-            "autoconnect": true,
-            "modules": [
-                {
-                    "id": "net.fabricmc:fabric-loader:0.18.4",
-                    "name": "Fabric Loader 0.18.4",
-                    "type": "Fabric",
-                    "artifact": {
-                        "size": 1944518,
-                        "MD5": "56c00fa22e0452e8567be1feae73c3b9",
-                        "url": "https://nvdaansel.github.io/TokiwaLauncher/repo/lib/net/fabricmc/fabric-loader/0.18.4/fabric-loader-0.18.4.jar"
-                    },
-                    "subModules": [
-                        {
                             "id": "1.21.11-fabric-0.18.4",
                             "name": "Fabric (version.json)",
                             "type": "VersionManifest",
                             "artifact": {
-                                "size": 3358,
-                                "MD5": "942ee9cc3f5ce8c97b13541fc0296804",
-                                "url": "https://nvdaansel.github.io/TokiwaLauncher/repo/versions/1.21.11-fabric-0.18.4/1.21.11-fabric-0.18.4.json"
-                            }
-                        },
-                        {
-                            "id": "voicechat:voicechat:fabric-1.21.11-2.6.12@jar",
-                            "name": "Simple Voice Chat",
-                            "type": "FabricMod",
-                            "required": {
-                                "value": true,
-                                "def": true
-                            },
-                            "artifact": {
-                                "size": 5564624,
-                                "MD5": "e3fc73bbbabc144e264eab41a6bd3cd1",
-                                "path": "voicechat-fabric-1.21.11-2.6.12.jar",
-                                "url": "https://nvdaansel.github.io/TokiwaLauncher/repo/mods/fabric/voicechat-fabric-1.21.11-2.6.12.jar"
+                                "size": 3361,
+                                "MD5": "0958450e3109840389d91fb936418dd8",
+                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/versions/1.21.11-fabric-0.18.4/1.21.11-fabric-0.18.4.json"
                             }
                         },
                         {
@@ -301,7 +55,7 @@
                                 "size": 1870358,
                                 "MD5": "be9eef883db31e21e422aed7262df919",
                                 "path": "sodium-fabric-0.8.7+mc1.21.11.jar",
-                                "url": "https://nvdaansel.github.io/TokiwaLauncher/repo/mods/fabric/sodium-fabric-0.8.7+mc1.21.11.jar"
+                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/mods/fabric/sodium-fabric-0.8.7+mc1.21.11.jar"
                             }
                         },
                         {
@@ -316,7 +70,7 @@
                                 "size": 900462,
                                 "MD5": "b4ca44f58755e258a9b1ea5fd7b3644a",
                                 "path": "lithium-fabric-0.21.4+mc1.21.11.jar",
-                                "url": "https://nvdaansel.github.io/TokiwaLauncher/repo/mods/fabric/lithium-fabric-0.21.4+mc1.21.11.jar"
+                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/mods/fabric/lithium-fabric-0.21.4+mc1.21.11.jar"
                             }
                         },
                         {
@@ -324,14 +78,14 @@
                             "name": "Iris Shaders",
                             "type": "FabricMod",
                             "required": {
-                                "value": false,
+                                "value": true,
                                 "def": true
                             },
                             "artifact": {
                                 "size": 2807547,
                                 "MD5": "5a7742b06041a0a98aa5df00ec8ce9a9",
                                 "path": "iris-fabric-1.10.7+mc1.21.11.jar",
-                                "url": "https://nvdaansel.github.io/TokiwaLauncher/repo/mods/fabric/iris-fabric-1.10.7+mc1.21.11.jar"
+                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/mods/fabric/iris-fabric-1.10.7+mc1.21.11.jar"
                             }
                         },
                         {
@@ -346,7 +100,7 @@
                                 "size": 2412693,
                                 "MD5": "f7e723a1649302a0a6923022a7596f1a",
                                 "path": "fabric-api-0.141.3+1.21.11.jar",
-                                "url": "https://nvdaansel.github.io/TokiwaLauncher/repo/mods/fabric/fabric-api-0.141.3+1.21.11.jar"
+                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/mods/fabric/fabric-api-0.141.3+1.21.11.jar"
                             }
                         },
                         {
@@ -432,6 +186,74 @@
                     ]
                 }
             ]
+        },
+        {
+            "id": "gradex-meme-TBD",
+            "name": "GradeX Meme",
+            "description": "GradeX Meme Server",
+            "icon": "",
+            "version": "1.0.0",
+            "address": "meme.gradex.games:25565",
+            "minecraftVersion": "TBD",
+            "discord": {
+                "shortId": "GradeX Meme",
+                "largeImageText": "GradeX Meme Server",
+                "largeImageKey": "gradex-meme-TBD"
+            },
+            "mainServer": false,
+            "autoconnect": true,
+            "modules": []
+        },
+        {
+            "id": "gradex-private-TBD",
+            "name": "GradeX Private",
+            "description": "GradeX Private Server",
+            "icon": "",
+            "version": "1.0.0",
+            "address": "private.gradex.games:25565",
+            "minecraftVersion": "TBD",
+            "discord": {
+                "shortId": "GradeX Private",
+                "largeImageText": "GradeX Private Server",
+                "largeImageKey": "gradex-private-TBD"
+            },
+            "mainServer": false,
+            "autoconnect": true,
+            "modules": []
+        },
+        {
+            "id": "gradex-yoruha-TBD",
+            "name": "Yoruha",
+            "description": "Yoruha Server",
+            "icon": "",
+            "version": "1.0.0",
+            "address": "Yoruha.gradex.games:25565",
+            "minecraftVersion": "TBD",
+            "discord": {
+                "shortId": "Yoruha",
+                "largeImageText": "Yoruha Server",
+                "largeImageKey": "gradex-yoruha-TBD"
+            },
+            "mainServer": false,
+            "autoconnect": true,
+            "modules": []
+        },
+        {
+            "id": "gradex-haruto-TBD",
+            "name": "Haruto",
+            "description": "Haruto Server",
+            "icon": "",
+            "version": "1.0.0",
+            "address": "haruto.gradex.games:25565",
+            "minecraftVersion": "TBD",
+            "discord": {
+                "shortId": "Haruto",
+                "largeImageText": "Haruto Server",
+                "largeImageKey": "gradex-haruto-TBD"
+            },
+            "mainServer": false,
+            "autoconnect": true,
+            "modules": []
         }
     ]
 }

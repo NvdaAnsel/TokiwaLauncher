@@ -1,4 +1,4 @@
-const AdmZip                = require('adm-zip')
+﻿const AdmZip                = require('adm-zip')
 const child_process         = require('child_process')
 const crypto                = require('crypto')
 const fs                    = require('fs-extra')
@@ -544,6 +544,29 @@ class ProcessBuilder {
         // Autoconnect
         this._processAutoConnectArg(args)
         
+        // Resource Packs - use default .minecraft resourcepacks folder
+        const defaultResPackDir = require("path").join(process.env.APPDATA || require("os").homedir(), ".minecraft", "resourcepacks")
+        args.push("--resourcePackDir")
+        args.push(defaultResPackDir)
+        // Screenshots - symlink to default .minecraft screenshots folder
+        const screenshotLink = require("path").join(this.gameDir, "screenshots")
+        const screenshotTarget = require("path").join(process.env.APPDATA || require("os").homedir(), ".minecraft", "screenshots")
+        const fse = require("fs-extra")
+        fse.ensureDirSync(screenshotTarget)
+        if(!fse.existsSync(screenshotLink)) {
+            try { fse.symlinkSync(screenshotTarget, screenshotLink, "junction") } catch(e) { console.log("Screenshot symlink failed:", e.message) }
+        } else if(!fse.lstatSync(screenshotLink).isSymbolicLink()) {
+            const files = fse.readdirSync(screenshotLink)
+            files.forEach(f => fse.moveSync(require("path").join(screenshotLink, f), require("path").join(screenshotTarget, f), {overwrite: false}))
+            fse.removeSync(screenshotLink)
+            try { fse.symlinkSync(screenshotTarget, screenshotLink, "junction") } catch(e) { console.log("Screenshot symlink failed:", e.message) }
+        }
+        // Options - symlink options.txt from default .minecraft
+        const optionsLink = require("path").join(this.gameDir, "options.txt")
+        const optionsTarget = require("path").join(process.env.APPDATA || require("os").homedir(), ".minecraft", "options.txt")
+        if(fse.existsSync(optionsTarget)) {
+            try { if(fse.existsSync(optionsLink) && !fse.lstatSync(optionsLink).isSymbolicLink()) { fse.removeSync(optionsLink) } if(!fse.existsSync(optionsLink)) { fse.symlinkSync(optionsTarget, optionsLink, "junction") } } catch(e) { console.log("Options symlink failed:", e.message) }
+        }
 
         // Forge Specific Arguments
         args = args.concat(this.modManifest.arguments.game)
