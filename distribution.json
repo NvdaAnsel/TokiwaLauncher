@@ -413,6 +413,21 @@
                                 "MD5": "56c00fa22e0452e8567be1feae73c3b9",
                                 "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/lib/net/fabricmc/fabric-loader/0.18.4/fabric-loader-0.18.4.jar"
                             }
+                        },
+                        {
+                            "id": "simple-voice-chat:simple-voice-chat:fabric-1.21.11-2.6.12@jar",
+                            "name": "Simple Voice Chat",
+                            "type": "FabricMod",
+                            "required": {
+                                "value": true,
+                                "def": true
+                            },
+                            "artifact": {
+                                "size": 5564624,
+                                "MD5": "e3fc73bbbabc144e264eab41a6bd3cd1",
+                                "path": "voicechat-fabric-1.21.11-2.6.12.jar",
+                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/mods/fabric/voicechat-fabric-1.21.11-2.6.12.jar"
+                            }
                         }
                     ]
                 }
