@@ -157,6 +157,122 @@
             "mainServer": false,
             "autoconnect": true,
             "modules": []
+        },
+        {
+            "id": "nyancraft-1.21.11",
+            "name": "にゃんクラ",
+            "description": "172.234.80.42:46400",
+            "icon": "https://nvdaansel.github.io/TokiwaLauncher/repo/server-icon.png",
+            "version": "1.0.0",
+            "address": "172.234.80.42:46400",
+            "minecraftVersion": "1.21.11",
+            "discord": {
+                "shortId": "にゃんクラ",
+                "largeImageText": "にゃんクラ Server",
+                "largeImageKey": "nyancraft"
+            },
+            "mainServer": false,
+            "autoconnect": true,
+            "modules": [
+                {
+                    "id": "net.fabricmc:fabric-loader:0.18.4",
+                    "name": "Fabric Loader 0.18.4",
+                    "type": "Fabric",
+                    "artifact": {
+                        "size": 1944518,
+                        "MD5": "56c00fa22e0452e8567be1feae73c3b9",
+                        "url": "https://nvdaansel.github.io/TokiwaLauncher/repo/lib/net/fabricmc/fabric-loader/0.18.4/fabric-loader-0.18.4.jar"
+                    },
+                    "subModules": [
+                        {
+                            "id": "1.21.11-fabric-0.18.4",
+                            "name": "Fabric (version.json)",
+                            "type": "VersionManifest",
+                            "artifact": {
+                                "size": 3358,
+                                "MD5": "942ee9cc3f5ce8c97b13541fc0296804",
+                                "url": "https://nvdaansel.github.io/TokiwaLauncher/repo/versions/1.21.11-fabric-0.18.4/1.21.11-fabric-0.18.4.json"
+                            }
+                        },
+                        {
+                            "id": "voicechat:voicechat:fabric-1.21.11-2.6.12@jar",
+                            "name": "Simple Voice Chat",
+                            "type": "FabricMod",
+                            "required": {
+                                "value": true,
+                                "def": true
+                            },
+                            "artifact": {
+                                "size": 5564624,
+                                "MD5": "e3fc73bbbabc144e264eab41a6bd3cd1",
+                                "path": "voicechat-fabric-1.21.11-2.6.12.jar",
+                                "url": "https://nvdaansel.github.io/TokiwaLauncher/repo/mods/fabric/voicechat-fabric-1.21.11-2.6.12.jar"
+                            }
+                        },
+                        {
+                            "id": "sodium:sodium:mc1.21.11-0.8.7-fabric@jar",
+                            "name": "Sodium",
+                            "type": "FabricMod",
+                            "required": {
+                                "value": true,
+                                "def": true
+                            },
+                            "artifact": {
+                                "size": 1870358,
+                                "MD5": "be9eef883db31e21e422aed7262df919",
+                                "path": "sodium-fabric-0.8.7+mc1.21.11.jar",
+                                "url": "https://nvdaansel.github.io/TokiwaLauncher/repo/mods/fabric/sodium-fabric-0.8.7+mc1.21.11.jar"
+                            }
+                        },
+                        {
+                            "id": "lithium:lithium:mc1.21.11-0.21.4-fabric@jar",
+                            "name": "Lithium",
+                            "type": "FabricMod",
+                            "required": {
+                                "value": true,
+                                "def": true
+                            },
+                            "artifact": {
+                                "size": 900462,
+                                "MD5": "b4ca44f58755e258a9b1ea5fd7b3644a",
+                                "path": "lithium-fabric-0.21.4+mc1.21.11.jar",
+                                "url": "https://nvdaansel.github.io/TokiwaLauncher/repo/mods/fabric/lithium-fabric-0.21.4+mc1.21.11.jar"
+                            }
+                        },
+                        {
+                            "id": "iris:iris:1.10.7+1.21.11-fabric@jar",
+                            "name": "Iris Shaders",
+                            "type": "FabricMod",
+                            "required": {
+                                "value": false,
+                                "def": true
+                            },
+                            "artifact": {
+                                "size": 2807547,
+                                "MD5": "5a7742b06041a0a98aa5df00ec8ce9a9",
+                                "path": "iris-fabric-1.10.7+mc1.21.11.jar",
+                                "url": "https://nvdaansel.github.io/TokiwaLauncher/repo/mods/fabric/iris-fabric-1.10.7+mc1.21.11.jar"
+                            }
+                        },
+                        {
+                            "id": "fabric-api:fabric-api:0.141.3+1.21.11@jar",
+                            "name": "Fabric API",
+                            "type": "FabricMod",
+                            "required": {
+                                "value": true,
+                                "def": true
+                            },
+                            "artifact": {
+                                "size": 2412693,
+                                "MD5": "f7e723a1649302a0a6923022a7596f1a",
+                                "path": "fabric-api-0.141.3+1.21.11.jar",
+                                "url": "https://nvdaansel.github.io/TokiwaLauncher/repo/mods/fabric/fabric-api-0.141.3+1.21.11.jar"
+                            }
+                        }
+                    ]
+                }
+            ]
         }
+
     ]
 }
