@@ -9,11 +9,11 @@ const CONFIG = {
     outputDir: './repo',
     userAgent: 'TokiwaLauncher/1.0.0 (contact@gradex.games)',
     servers: [
-        { id: 'gradex-main-1.21.11', name: 'GradeX Main', description: 'GradeX Main Server', address: 'mc.GradeX.games:25565', mcVersion: '1.21.11', mainServer: true, includeMods: true },
-        { id: 'gradex-meme-TBD', name: 'GradeX Meme', description: 'GradeX Meme Server', address: 'meme.gradex.games:25565', mcVersion: 'TBD', mainServer: false, includeMods: false },
-        { id: 'gradex-private-TBD', name: 'GradeX Private', description: 'GradeX Private Server', address: 'private.gradex.games:25565', mcVersion: 'TBD', mainServer: false, includeMods: false },
-        { id: 'gradex-yoruha-TBD', name: 'Yoruha', description: 'Yoruha Server', address: 'Yoruha.gradex.games:25565', mcVersion: 'TBD', mainServer: false, includeMods: false },
-        { id: 'gradex-haruto-TBD', name: 'Haruto', description: 'Haruto Server', address: 'haruto.gradex.games:25565', mcVersion: 'TBD', mainServer: false, includeMods: false }
+        { id: 'gradex-main-1.21.11', name: 'get0', description: 'mc.GradeX.games', address: 'mc.GradeX.games:25565', mcVersion: '1.21.11', mainServer: true, includeMods: true },
+        { id: 'gradex-meme-TBD', name: 'meme', description: 'meme.gradex.games', address: 'meme.gradex.games:25565', mcVersion: 'TBD', mainServer: false, includeMods: false },
+        { id: 'gradex-private-TBD', name: 'private', description: 'private.gradex.games', address: 'private.gradex.games:25565', mcVersion: 'TBD', mainServer: false, includeMods: false },
+        { id: 'gradex-haruto-TBD', name: 'Haruto', description: 'haruto.gradex.games', address: 'haruto.gradex.games:25565', mcVersion: 'TBD', mainServer: false, includeMods: false },
+        { id: 'nyancraft-1.21.11', name: 'にゃんクラ', description: '172.234.80.42:46400', address: '172.234.80.42:46400', mcVersion: '1.21.11', mainServer: false, includeMods: true }
     ],
     mods: [
         { slug: 'sodium', name: 'Sodium', required: true },
