@@ -13,7 +13,7 @@ const CONFIG = {
         { id: 'gradex-meme-TBD', name: 'meme', description: 'meme.gradex.games', address: 'meme.gradex.games:25565', mcVersion: 'TBD', mainServer: false, includeMods: false },
         { id: 'gradex-private-TBD', name: 'private', description: 'private.gradex.games', address: 'private.gradex.games:25565', mcVersion: 'TBD', mainServer: false, includeMods: false },
         { id: 'gradex-haruto-TBD', name: 'Haruto', description: 'haruto.gradex.games', address: 'haruto.gradex.games:25565', mcVersion: 'TBD', mainServer: false, includeMods: false },
-        { id: 'nyancraft-1.21.11', name: 'にゃんクラ', description: '172.234.80.42:46400', address: '172.234.80.42:46400', mcVersion: '1.21.11', mainServer: false, includeMods: true }
+        { id: 'nyancraft-1.21.11', name: 'にゃんクラ', description: 'にゃんクラ サーバー', address: '172.234.80.42:46400', mcVersion: '1.21.11', mainServer: false, includeMods: true }
     ],
     mods: [
         { slug: 'sodium', name: 'Sodium', required: true },
