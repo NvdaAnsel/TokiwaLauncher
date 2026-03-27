@@ -428,6 +428,21 @@
                                 "path": "voicechat-fabric-1.21.11-2.6.12.jar",
                                 "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/mods/fabric/voicechat-fabric-1.21.11-2.6.12.jar"
                             }
+                        },
+                        {
+                            "id": "journeymap:journeymap:1.21.11-6.0.0-beta.60+fabric@jar",
+                            "name": "JourneyMap",
+                            "type": "FabricMod",
+                            "required": {
+                                "value": false,
+                                "def": true
+                            },
+                            "artifact": {
+                                "size": 3665583,
+                                "MD5": "6f56537eaa827e824a7d9a55961f42d8",
+                                "path": "journeymap-fabric-1.21.11-6.0.0-beta.60.jar",
+                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/mods/fabric/journeymap-fabric-1.21.11-6.0.0-beta.60.jar"
+                            }
                         }
                     ]
                 }
