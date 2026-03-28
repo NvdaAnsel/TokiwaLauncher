@@ -570,6 +570,19 @@ class ProcessBuilder {
             try { fse.symlinkSync(screenshotTarget, screenshotLink, "junction") } catch(e) { console.log("Screenshot symlink failed:", e.message) }
         }
 
+        // Brightness boost via Sodium config
+        const _sodiumCfg = require('path').join(this.gameDir, 'config', 'sodium-options.json')
+        const _fse2 = require('fs-extra')
+        _fse2.ensureDirSync(require('path').join(this.gameDir, 'config'))
+        if(_fse2.existsSync(_sodiumCfg)) {
+            try {
+                const _sc = JSON.parse(_fse2.readFileSync(_sodiumCfg, 'utf-8'))
+                _sc.quality = _sc.quality || {}
+                _sc.quality.brightness = 300
+                _fse2.writeFileSync(_sodiumCfg, JSON.stringify(_sc, null, 4))
+            } catch(e) {}
+        }
+
         
         // Forge Specific Arguments
         args = args.concat(this.modManifest.arguments.game)
