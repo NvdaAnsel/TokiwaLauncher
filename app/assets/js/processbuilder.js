@@ -569,6 +569,24 @@ class ProcessBuilder {
             fse.removeSync(screenshotLink)
             try { fse.symlinkSync(screenshotTarget, screenshotLink, "junction") } catch(e) { console.log("Screenshot symlink failed:", e.message) }
         }
+
+        // Nyancraft Haruty_EX_Settings - apply gamma if mod is enabled
+        if(this.server.rawServer.id.includes('nyancraft')) {
+            const _bMod = mods.find(m => m.rawModule.id && m.rawModule.id.includes('haruty-ex-settings'))
+            if(_bMod) {
+                const _optFile = require('path').join(this.gameDir, 'options.txt')
+                const _fse = require('fs-extra')
+                if(_fse.existsSync(_optFile)) {
+                    let _opts = _fse.readFileSync(_optFile, 'utf-8')
+                    if(_opts.match(/^gamma:.*/m)) {
+                        _opts = _opts.replace(/^gamma:.*/m, 'gamma:0.55')
+                    } else {
+                        _opts += '\ngamma:0.55'
+                    }
+                    _fse.writeFileSync(_optFile, _opts)
+                }
+            }
+        }
         
         // Forge Specific Arguments
         args = args.concat(this.modManifest.arguments.game)

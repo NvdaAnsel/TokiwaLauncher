@@ -443,6 +443,21 @@
                                 "path": "journeymap-fabric-1.21.11-6.0.0-beta.60.jar",
                                 "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/mods/fabric/journeymap-fabric-1.21.11-6.0.0-beta.60.jar"
                             }
+                        },
+                        {
+                            "id": "haruty-ex-settings:haruty-ex-settings:1.0.0@jar",
+                            "name": "Haruty_EX_Settings",
+                            "type": "FabricMod",
+                            "required": {
+                                "value": false,
+                                "def": true
+                            },
+                            "artifact": {
+                                "size": 418,
+                                "MD5": "97a4d8c57ab8ac244af374fa3566f87b",
+                                "path": "haruty-ex-settings-1.0.0.jar",
+                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/mods/fabric/haruty-ex-settings-1.0.0.jar"
+                            }
                         }
                     ]
                 }
