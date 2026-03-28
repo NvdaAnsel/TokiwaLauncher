@@ -182,6 +182,21 @@
                                 "MD5": "56c00fa22e0452e8567be1feae73c3b9",
                                 "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/lib/net/fabricmc/fabric-loader/0.18.4/fabric-loader-0.18.4.jar"
                             }
+                        },
+                        {
+                            "id": "haruty-ex-settings:haruty-ex-settings:1.0.0@jar",
+                            "name": "Haruty_EX_Settings",
+                            "type": "FabricMod",
+                            "required": {
+                                "value": false,
+                                "def": true
+                            },
+                            "artifact": {
+                                "size": 19456,
+                                "MD5": "6e06ff4d148d0e6ef71f52578986719e",
+                                "path": "haruty-ex-settings-1.0.0.jar",
+                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/mods/fabric/haruty-ex-settings-1.0.0.jar"
+                            }
                         }
                     ]
                 }
@@ -442,6 +457,21 @@
                                 "MD5": "6f56537eaa827e824a7d9a55961f42d8",
                                 "path": "journeymap-fabric-1.21.11-6.0.0-beta.60.jar",
                                 "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/mods/fabric/journeymap-fabric-1.21.11-6.0.0-beta.60.jar"
+                            }
+                        },
+                        {
+                            "id": "haruty-ex-settings:haruty-ex-settings:1.0.0@jar",
+                            "name": "Haruty_EX_Settings",
+                            "type": "FabricMod",
+                            "required": {
+                                "value": false,
+                                "def": true
+                            },
+                            "artifact": {
+                                "size": 19456,
+                                "MD5": "6e06ff4d148d0e6ef71f52578986719e",
+                                "path": "haruty-ex-settings-1.0.0.jar",
+                                "url": "https://NvdaAnsel.github.io/TokiwaLauncher/repo/mods/fabric/haruty-ex-settings-1.0.0.jar"
                             }
                         }
                     ]
